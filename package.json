@@ -1,0 +1,25 @@
+{
+  "name": "trillo",
+  "version": "1.0.0",
+  "description": "Trillo landing page",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css --watch",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel watch:sass devserver",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'defaults'  css/style.comp.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "author": "Edita Narkuniene",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^8.5.0",
+    "concat": "^1.0.3",
+    "live-server": "^1.2.0",
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.3",
+    "postcss-cli": "^5.0.0"
+  }
+}
