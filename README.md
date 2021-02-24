@@ -1,5 +1,5 @@
 # Trillo landing page
-This project is a responsive webpage, build by using the Flexbox and Grid CSS layout methods.
+This project is a responsive webpage, build by using the Flexbox and Grid CSS layout methods. Live preview is available [here](https://trillo-ashen.vercel.app/).
 
 Design is taken from [Advanced CSS and Sass course](https://www.udemy.com/advanced-css-and-sass/).
 
